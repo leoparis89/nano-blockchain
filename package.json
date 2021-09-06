@@ -1,8 +1,19 @@
 {
+  "name": "mini-blockchain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:leoparis89/nano-blockchain.git",
+  "author": "Lev Kowalski <levkowalski@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.7.10",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  },
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
   "dependencies": {
     "crypto-js": "^4.1.1"
-  },
-  "devDependencies": {
-    "@types/crypto-js": "^4.0.2"
   }
 }

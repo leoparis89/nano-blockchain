@@ -3,8 +3,8 @@ import SHA256 from "crypto-js/sha256";
 export class Block {
   constructor(
     private index: number,
-    private timestamp: number,
-    private data: any,
+    private timestamp: string,
+    private data: string,
     private precedingHash: string = " ",
     public hash: any
   ) {}
