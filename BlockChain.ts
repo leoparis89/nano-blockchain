@@ -1,6 +1,6 @@
 import { Block } from "./Block";
 
-class CryptoBlockchain {
+export class CryptoBlockchain {
   private blockchain: Block[];
 
   constructor() {
@@ -13,7 +13,7 @@ class CryptoBlockchain {
   obtainLatestBlock() {
     return this.blockchain[this.blockchain.length - 1];
   }
-  addNewBlock(newBlock) {
+  addNewBlock(newBlock: Block) {
     newBlock.precedingHash = this.obtainLatestBlock().hash;
     newBlock.hash = newBlock.computeHash();
     this.blockchain.push(newBlock);

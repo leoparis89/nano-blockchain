@@ -7,7 +7,7 @@ export class Block {
     private index: number,
     private timestamp: string,
     private data: any,
-    private precedingHash: string = " "
+    public precedingHash: string = " "
   ) {
     this.hash = this.computeHash();
   }
